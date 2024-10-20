@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp2h7aerp53i1"]
+
+[ext_resource type="Script" path="res://Cenas/game_over.gd" id="1_64m4a"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_64m4a")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 160.0
+offset_right = 883.0
+offset_bottom = 454.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 368.0
+offset_right = 815.0
+offset_bottom = 471.0
+theme_override_font_sizes/font_size = 40
+text = "REINICIAR "
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 498.0
+offset_right = 816.0
+offset_bottom = 597.0
+theme_override_font_sizes/font_size = 30
+text = "VOLTAR AO MENU INICIAL "
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bk1k50csds0mt"
+path="res://.godot/imported/Raça Negra - Cheia de Manias (Raça Negra, Vol. 3) [Áudio Oficial].mp3-3db06264407f50182477c22f4000b80f.mp3str"
+
+[deps]
+
+source_file="res://Sons/Raça Negra - Cheia de Manias (Raça Negra, Vol. 3) [Áudio Oficial].mp3"
+dest_files=["res://.godot/imported/Raça Negra - Cheia de Manias (Raça Negra, Vol. 3) [Áudio Oficial].mp3-3db06264407f50182477c22f4000b80f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

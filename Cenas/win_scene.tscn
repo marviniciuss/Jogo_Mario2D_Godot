@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1gou6cuhgkbb"]
+
+[ext_resource type="Texture2D" uid="uid://3gjb77h7wv37" path="res://Assets Super Mario Bros/Sprites/win tela.png" id="1_jia1r"]
+[ext_resource type="Script" path="res://Cenas/win_scene.gd" id="1_jlr8q"]
+
+[node name="win_scene" type="Control"]
+custom_minimum_size = Vector2(2.75, 2.75)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jlr8q")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1154.0
+offset_bottom = 642.0
+texture = ExtResource("1_jia1r")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 334.0
+offset_right = 732.0
+offset_bottom = 458.0
+theme_override_font_sizes/font_size = 50
+text = "PLAY"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

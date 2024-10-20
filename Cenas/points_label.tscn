@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://t4au0f00p3ds"]
+
+[ext_resource type="FontFile" uid="uid://dm3ch1vmt4ixr" path="res://Assets Super Mario Bros/Fonts/font.ttf" id="1_uykys"]
+[ext_resource type="Script" path="res://Cenas/points_label.gd" id="2_3ttjj"]
+
+[node name="PointsLabel" type="Label"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_uykys")
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_3ttjj")

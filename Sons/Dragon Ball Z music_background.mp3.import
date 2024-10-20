@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://buvcy43rt0j6d"
+path="res://.godot/imported/Dragon Ball Z music_background.mp3-c869bdb00124a8cbda004f26303d3e31.mp3str"
+
+[deps]
+
+source_file="res://Sons/Dragon Ball Z music_background.mp3"
+dest_files=["res://.godot/imported/Dragon Ball Z music_background.mp3-c869bdb00124a8cbda004f26303d3e31.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

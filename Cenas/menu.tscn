@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4l68xp3oeq1a"]
+
+[ext_resource type="Script" path="res://Cenas/menu.gd" id="1_e743x"]
+[ext_resource type="Texture2D" uid="uid://dk5rseahy4tl7" path="res://Assets Super Mario Bros/Sprites/Tela mario.png" id="1_objh0"]
+[ext_resource type="Texture2D" uid="uid://w21xj87yxqcq" path="res://Assets Super Mario Bros/Sprites/nome mario .png" id="3_d85cl"]
+
+[sub_resource type="FontFile" id="FontFile_5ha8p"]
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/40/0/kerning_overrides/40/0 = Vector2(0, 0)
+cache/0/40/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/40/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_60p8k"]
+
+[node name="Control" type="Control"]
+custom_minimum_size = Vector2(2.75, 2.75)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e743x")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1.0
+offset_right = 169.0
+offset_bottom = 80.0
+texture = ExtResource("1_objh0")
+
+[node name="NomeMario" type="Sprite2D" parent="."]
+position = Vector2(580, 253)
+scale = Vector2(0.794702, 0.812706)
+texture = ExtResource("3_d85cl")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 408.0
+offset_right = 712.0
+offset_bottom = 513.0
+theme_override_fonts/font = SubResource("FontFile_5ha8p")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxEmpty_60p8k")
+text = "PLAY"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

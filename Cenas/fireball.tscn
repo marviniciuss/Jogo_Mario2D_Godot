@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://b64cmk1o8hl71"]
+
+[ext_resource type="Texture2D" uid="uid://c135f55fbxgm3" path="res://Assets Super Mario Bros/Sprites/fireball1.png" id="1_128e6"]
+[ext_resource type="Script" path="res://Cenas/fireball.gd" id="1_sxpen"]
+[ext_resource type="Texture2D" uid="uid://hiugutq3ty4p" path="res://Assets Super Mario Bros/Sprites/fireball2.png" id="2_l2r1x"]
+[ext_resource type="Texture2D" uid="uid://bdgbfwhb1nnqe" path="res://Assets Super Mario Bros/Sprites/fireball3.png" id="3_rgi46"]
+[ext_resource type="Texture2D" uid="uid://dhyiy4t3j3xga" path="res://Assets Super Mario Bros/Sprites/fireball4.png" id="4_3nusi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l4lup"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_128e6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_l2r1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rgi46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3nusi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u61o6"]
+size = Vector2(8, 8)
+
+[node name="Fireball" type="Area2D"]
+collision_layer = 64
+collision_mask = 60
+script = ExtResource("1_sxpen")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_l4lup")
+autoplay = "default"
+frame_progress = 0.59573
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_u61o6")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 5)
+collision_mask = 18
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

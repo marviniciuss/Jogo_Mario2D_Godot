@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8s4dbrl5yvnx"
+path="res://.godot/imported/SONIC THE HEDGEHOG ( MUSICA DE FUNDO).mp3-b10e0d0bdfdf9f109f6ade25930c1c12.mp3str"
+
+[deps]
+
+source_file="res://Sons/SONIC THE HEDGEHOG ( MUSICA DE FUNDO).mp3"
+dest_files=["res://.godot/imported/SONIC THE HEDGEHOG ( MUSICA DE FUNDO).mp3-b10e0d0bdfdf9f109f6ade25930c1c12.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
